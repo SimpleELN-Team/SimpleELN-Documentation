@@ -15,7 +15,7 @@ Source files: [SimpelELN-Team/SimpleELN-Documentation/edit/main/source](https://
 ## Installation
 
 ~~~bash
-git clone [https://github.com/SimpelELN-Team/SimpleELN-Documentation](https://github.com/SimpelELN-Team/SimpleELN-Documentation)
+git clone https://github.com/SimpelELN-Team/SimpleELN-Documentation
 cd SimpleELN-Documentation
 pip install --user sphinx sphinx_rtd_theme myst-parser sphinx-autobuild sphinx-design
 ~~~
