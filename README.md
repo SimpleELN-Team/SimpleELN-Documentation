@@ -28,5 +28,5 @@ sphinx-build -M html source/ build/
 
 Then point your browser to the `build/html/index.html` file.
 
-The pre-generated documentation can conveniently be accessed via `html/index.html` file.
+The pre-generated documentation can also be conveniently accessed via the `html/index.html` file.
 
