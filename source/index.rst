@@ -43,6 +43,7 @@ Contents
    :caption: Appendix
    :numbered:
    
+   Zip and Unzip Files on Windows <appendix/zip-unzip-files-windows>
    Change Folder Permission <appendix/change-folder-permission-mac>
    Folder Structure <appendix/server-folder-structure>
    
