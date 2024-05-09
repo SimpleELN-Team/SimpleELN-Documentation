@@ -53,25 +53,32 @@ Installing MySQL Server and Create the Application Database
 Installing and Running the SimpleELN Web Server
 --------------------------------------------------------------------------------------------------------------------
 
-1. Download the application zip file (SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source.
-#. Rename the downloaded zip file to **simpleeln-multiteam.zip** for convenient identification.
+1. Download the application archive file (:custom-color-primary-bold:`SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.zip` or :custom-color-primary-bold:`SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source.
+#. Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-multiteam.zip` or :custom-color-primary-bold:`simpleeln-multiteam.tar.gz` for convenient identification.
+#. Extract the archive file.
+   
+   - For Windows:
+       
+       Extract the :custom-color-primary-bold:`simpleeln-multiteam.zip` file into a designated folder, as outlined in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
+       
+   - For macOS or Linux:
+       
+       - Open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+       - Extract the :custom-color-primary-bold:`simpleeln-multiteam.tar.gz` file as outlined below.
+          
+          .. code-block:: sh
+             :linenos:
+             
+             # Extract the simpleeln-multiteam.tar.gz file
+             tar -xzvf <path/to/simpleeln-multiteam.tar.gz> -C <path/to/target/folder>
+             
 #. Open a terminal window
 
     - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
     - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
 
-#. Navigate to the directory where the **simpleeln-multiteam.zip** file is extracted.
-
-    .. code-block:: sh
-       :linenos:
-       
-       # Navigate to the directory where the simpleeln-multiteam.zip file is located and extract the zip file.
-       cd /path/to/simpleeln-multiteam.zip package directory
-       unzip simpleeln-multiteam.zip
-       # Navigate to the directory where the simpleeln-multiteam.zip file has been extracted.
-       cd simpleeln-multiteam
-       
-#. Modify the database connection settings. (Create the datasource.properties file and place it in the 'config' folder)
+#. Navigate to the directory where the archive file has been extracted.
+#. Modify the database connection settings. (Create the datasource.properties file and place it in the 'config' folder if not exist)
       
     .. code-block:: cfg
        :caption: contents of the config/datasource.properties file 
@@ -110,9 +117,6 @@ Installing and Running the SimpleELN Web Server
       .. code-block:: sh
          :linenos:
          
-         # Optional: modify the file permissions if necessary
-         sudo chown -R $USER ..
-         chmod a+x ./startserver.sh
          # run the script
          ./startserver.sh
          
@@ -130,31 +134,40 @@ Here's a step-by-step guide to installing Docker, Docker Compose and running the
 
 1. Install Docker
 
-
     Visit the `Docker website <https://docs.docker.com/get-docker>`_ to download and install the appropriate version of Docker for your operating system.
+
 #. Install Docker Compose
 
     Visit the `Docker Compose website <https://docs.docker.com/compose/install>`_  and follow the instructions to install Docker Compose.
-#. Download and extract the SimpleELN **MultiTeam Edition** docker package zip file
 
-    - Download the SimpleELN **MultiTeam Edition** docker package zip file (SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source.
-    - Rename the downloaded zip file to **simpleeln-multiteam-docker.zip** for convenient identification.
-    - Open a terminal window
-      
-      - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
-      - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
-    - Navigate to the directory where the **simpleeln-multiteam-docker.zip** file is extracted.
-    
-      .. code-block:: sh
-         :linenos:
-         
-         # Navigate to the directory where the simpleeln-multiteam-docker.zip file is located and extract the zip file.
-         cd /path/to/simpleeln-multiteam-docker.zip package directory
-         unzip simpleeln-multiteam-docker.zip
-         # Navigate to the directory where the simpleeln-multiteam-docker.zip file has been extracted.
-         cd simpleeln-multiteam-docker
-         
-#. Run SimpleELN web server using Docker
+#. Download and extract the SimpleELN **MultiTeam Edition** docker package file
+
+    - Download the SimpleELN **MultiTeam Edition** docker package file (:custom-color-primary-bold:`SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.zip` or :custom-color-primary-bold:`SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source.
+    - Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-multiteam-docker.zip` or :custom-color-primary-bold:`simpleeln-multiteam-docker.tar.gz` for convenient identification.
+    - Extract the archive file.
+       
+       - For Windows:
+          
+          Extract the :custom-color-primary-bold:`simpleeln-multiteam-docker.zip` file into a designated folder, as outlined in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
+          
+       - For macOS or Linux:
+          
+          - Open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+          - Extract the :custom-color-primary-bold:`simpleeln-multiteam-docker.tar.gz` file as outlined below.
+             
+             .. code-block:: sh
+                :linenos:
+                
+                # Extract the simpleeln-multiteam-docker.tar.gz file
+                tar -xzvf <path/to/simpleeln-multiteam-docker.tar.gz> -C <path/to/target/folder>
+                
+#. Open a terminal window
+
+    - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
+    - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+
+#. Navigate to the directory where the archive file has been extracted.
+#. Run the SimpleELN web server using Docker
     
     .. code-block:: sh
       :linenos:

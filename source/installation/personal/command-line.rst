@@ -15,24 +15,31 @@ Install SimpleELN :custom-color-primary-bold:`Personal Edition` as Web Server
 For personal usage, executing the installer application is highly recommended. However, for testing purposes or advanced scenarios, running the SimpleELN **Personal Edition** as a web server is preferred due to its reduced overhead and optimized resource utilization. To install SimpleELN as a web server, kindly adhere to the outlined steps:
 
 
-1. Download the application zip file (SimpleELN-Personal-Server-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source
-#. Rename the downloaded zip file to **simpleeln-personal.zip** for convenient identification.
+1. Download the application archive file (:custom-color-primary-bold:`SimpleELN-Personal-Server-{platform}-{arch}-{version}.zip` or :custom-color-primary-bold:`SimpleELN-Personal-Server-{platform}-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source
+#. Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-personal.zip` or :custom-color-primary-bold:`simpleeln-personal.tar.gz` for convenient identification.
+#. Extract the archive file.
+
+   - For Windows:
+       
+       Extract the :custom-color-primary-bold:`simpleeln-personal.zip` file into a designated folder, as outlined in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`. 
+       
+   - For macOS or Linux:
+       
+       - Open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+       - Extract the :custom-color-primary-bold:`simpleeln-personal.tar.gz` file as outlined below.
+            
+            .. code-block:: sh
+               :linenos:
+               
+               # Extract the simpleeln-personal.tar.gz file
+               tar -xzvf <path/to/simpleeln-personal.tar.gz> -C <path/to/target/folder>
+               
 #. Open a terminal window
 
     - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
     - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
 
-#. Navigate to the directory where the **simpleeln-personal.zip** file is located and extract the zip file.
-
-    .. code-block:: sh
-       :linenos:
-       
-       # Navigate to the directory where the simpleeln-personal.zip file is located and extract the zip file.
-       cd /path/to/simpleeln-personal.zip package directory
-       unzip simpleeln-personal.zip
-       # Navigate to the directory where the simpleeln-personal.zip file has been extracted.
-       cd simpleeln-personal
-
+#. Navigate to the directory where the archive file has been extracted.
 #. Modify the web server settings. (Create the application.properties file and place it in the 'config' folder if not exist)
       
     .. code-block:: cfg
@@ -60,9 +67,6 @@ For personal usage, executing the installer application is highly recommended. H
     .. code-block:: sh
        :linenos:
        
-       # Optional: modify the file permissions if necessary
-       sudo chown -R $USER ..
-       chmod a+x ./startserver.sh
        # run the script
        ./startserver.sh
         

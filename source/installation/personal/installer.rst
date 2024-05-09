@@ -28,7 +28,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
             
             Here is a step-by-step guide to installing SimpleELN **Personal Edition** on Windows using the installer:
             
-            1. Download the installer application file (SimpleELN-Personal-win32-x64-{version}.exe for Windows) from the official website or a trusted source.
+            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-win32-x64-{version}.exe` for Windows) from the official website or a trusted source.
             2. Double-click the downloaded installer to start the installation process.
             3. Follow the on-screen instructions to complete the installation.
             4. If the installation is successful, you can launch SimpleELN **Personal Edition** from the Start menu or the desktop shortcut.
@@ -42,7 +42,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
             
             Here is a step-by-step guide to installing SimpleELN **Personal Edition** on macOS using the DMG file:
             
-            1. Download the installer application file (SimpleELN-Personal-darwin-{arch}-{version}.dmg for Mac) from the official website or a trusted source.
+            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-darwin-{arch}-{version}.dmg` for Mac) from the official website or a trusted source.
             2. Open the DMG file using the default macOS application or any other disk image viewer.
             3. A virtual disk will appear on your desktop. Double-click it to mount the disk.
             4. Inside the mounted disk, you will find the SimpleELN application. Drag it to the **Applications** folder.
@@ -58,7 +58,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
        
             Here is a step-by-step guide to installing SimpleELN **Personal Edition** on Linux using the DEB or RPM file:
             
-            1. Download the installer application file (SimpleELN-Personal-linux-{arch}-{version}.deb or SimpleELN-Personal-linux-{arch}-{version}.rpm for Linux) from the official website or a trusted source
+            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-linux-{arch}-{version}.deb` or :custom-color-primary-bold:`SimpleELN-Personal-linux-{arch}-{version}.rpm` for Linux) from the official website or a trusted source
             #. Install the downloaded package.
                 
                 a. Installation Guide for Debian and Debian-derived Linux distributions
@@ -93,8 +93,8 @@ To install the SimpleELN **Personal Edition**, you have the following options:
             
             Here is a step-by-step guide to running the portable version of the SimpleELN **Personal Edition** on Windows:
             
-            1. Download the portable application file (SimpleELN-Personal-Portable-win32-x64-{version}.zip for Windows) from the official website or a trusted source.
-            2. Extract the downloaded zip file to a folder.
+            1. Download the portable application file (:custom-color-primary-bold:`SimpleELN-Personal-Portable-win32-x64-{version}.zip` for Windows) from the official website or a trusted source.
+            2. Extract the downloaded zip file into a designated folder, as instructed in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
             3. Click the executable file (:custom-color-primary:`SimpleELN.exe`) to run the portable version.
             4. Once launched, the SimpleELN interface similar to the following :ref:`screenshot <personal-edition-desktop-homepage-screenshots>` will be shown. 
             
@@ -105,7 +105,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
             
             Here is a step-by-step guide to running the portable version of the SimpleELN **Personal Edition** on MacOS:
             
-            1. Download the portable application file (SimpleELN-Personal-Portable-darwin-{arch}-{version}.zip for MacOS) from the official website or a trusted source.
+            1. Download the portable application file (:custom-color-primary-bold:`SimpleELN-Personal-Portable-darwin-{arch}-{version}.zip` for MacOS) from the official website or a trusted source.
             2. Extract the downloaded zip file to a folder.
             3. Click the icon file (:custom-color-primary:`SimpleELN.app`) to run the portable version.
             4. Once launched, the SimpleELN interface similar to the following :ref:`screenshot <personal-edition-desktop-homepage-screenshots>` will be shown. 
@@ -116,7 +116,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
        
             Here is a step-by-step guide to running the portable version of the SimpleELN **Personal Edition** on Linux:
             
-            1. Download the portable application file (SimpleELN-Personal-Portable-linux-{arch}-{version}.tar.gz for Linux) from the official website or a trusted source.
+            1. Download the portable application file (:custom-color-primary-bold:`SimpleELN-Personal-Portable-linux-{arch}-{version}.tar.gz` for Linux) from the official website or a trusted source.
             2. Extract the downloaded .tar.gz file to a folder (eg. /target/directory).
                 
                 .. code-block:: sh

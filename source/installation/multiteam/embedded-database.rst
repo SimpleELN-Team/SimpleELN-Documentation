@@ -15,23 +15,31 @@ Install SimpleELN :custom-color-primary-bold:`MultiTeam Edition` as Web Server w
 
 The SimpleELN **MultiTeam Edition** is preconfigured with an embedded database, ideal for testing purposes. For production usage, kindly refer to the instructions outlined in :ref:`Install SimpleELN MultiTeam Edition with an External Database <install-multiteam-external-database>` for integrating with external databases such as MySQL, SQL Server, or Oracle. Please adhere to the outlined steps below to test its functionalities:
 
-1. Download the application zip file (SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source.
-#. Rename the downloaded zip file to **simpleeln-multiteam.zip** for convenient identification.
+1. Download the application archive file (:custom-color-primary-bold:`SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.zip` or :custom-color-primary-bold:`SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source.
+#. Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-multiteam.zip` or :custom-color-primary-bold:`simpleeln-multiteam.tar.gz` for convenient identification.
+#. Extract the archive file.
+   
+   - For Windows:
+      
+      Extract the :custom-color-primary-bold:`simpleeln-multiteam.zip` file into a designated folder, as outlined in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
+      
+   - For macOS or Linux:
+      
+      - Open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+      - Extract the :custom-color-primary-bold:`simpleeln-multiteam.tar.gz` file as outlined below.
+         
+         .. code-block:: sh
+            :linenos:
+            
+            # Extract the simpleeln-multiteam.tar.gz file
+            tar -xzvf <path/to/simpleeln-multiteam.tar.gz> -C <path/to/target/folder>
+            
 #. Open a terminal window
-    
+
     - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
     - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
-    
-#. Navigate to the directory where the **simpleeln-multiteam.zip** file is extracted.
-      
-      .. code-block:: sh
-        :linenos:
-        
-        # Navigate to the directory where the simpleeln-multiteam.zip file is located and extract the zip file.
-        unzip simpleeln-multiteam.zip
-        # Navigate to the directory where the simpleeln-multiteam.zip file has been extracted.
-        cd simpleeln-multiteam
-        
+
+#. Navigate to the directory where the archive file has been extracted.
 #. Modify the web server settings. (Create the application.properties file and place it in the 'config' folder if not exist)
       
     .. code-block:: cfg
@@ -57,9 +65,6 @@ The SimpleELN **MultiTeam Edition** is preconfigured with an embedded database, 
       .. code-block:: sh
          :linenos:
          
-         # Optional: modify the file permissions if necessary
-         sudo chown -R $USER ..
-         chmod a+x ./startserver.sh
          # run the script
          ./startserver.sh
 
