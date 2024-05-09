@@ -52,26 +52,33 @@ Installing MySQL Server and Create the Application Database
 Installing and Running the SimpleELN Web Server
 --------------------------------------------------------------------------------------------------------------------
 
-1. Download the application zip file (SimpleELN-Team-Server-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source.
-#. Rename the downloaded zip file to **simpleeln-team.zip** for convenient identification.
+1. Download the application archive file (:custom-color-primary-bold:`SimpleELN-Team-Server-{platform}-{arch}-{version}.zip` or :custom-color-primary-bold:`SimpleELN-Team-Server-{platform}-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source.
+#. Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-team.zip` or :custom-color-primary-bold:`simpleeln-team.tar.gz` for convenient identification.
+#. Extract the archive file.
+    
+    - For Windows:
+        
+        Extract the :custom-color-primary-bold:`simpleeln-team.zip` file into a designated folder, as outlined in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
+        
+    - For macOS or Linux:
+        
+        - Open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+        - Extract the :custom-color-primary-bold:`simpleeln-team.tar.gz` file as outlined below.
+          
+          .. code-block:: sh
+             :linenos:
+             
+             # Extract the simpleeln-team.tar.gz file
+             tar -xzvf <path/to/simpleeln-team.tar.gz> -C <path/to/target/folder>
+             
 #. Open a terminal window
 
     - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
     - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
 
-#. Navigate to the directory where the **simpleeln-team.zip** file is extracted.
-
-    .. code-block:: sh
-       :linenos:
-       
-       # Navigate to the directory where the simpleeln-team.zip file is located and extract the zip file.
-       cd /path/to/simpleeln-team.zip package directory
-       unzip simpleeln-team.zip
-       # Navigate to the directory where the simpleeln-team.zip file has been extracted.
-       cd simpleeln-team
-
-#. Modify the database connection settings. (Create the datasource.properties file and place it in the 'config' folder)
-      
+#. Navigate to the directory where the archive file has been extracted.
+#. Modify the database connection settings. (Create the datasource.properties file and place it in the 'config' folder if not exist)
+    
     .. code-block:: cfg
        :caption: contents of the config/datasource.properties file 
        :linenos:
@@ -83,9 +90,9 @@ Installing and Running the SimpleELN Web Server
        spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
        spring.datasource.sql-script-encoding=UTF-8
        spring.datasource.schema=classpath:elnschema.mysql.sql
-
+    
 #. Modify the web server settings. (Create the application.properties file and place it in the 'config' folder if not exist)
-      
+    
     .. code-block:: cfg
        :caption: contents of the config/application.properties file 
        :linenos:
@@ -94,7 +101,7 @@ Installing and Running the SimpleELN Web Server
        # server.port=32780 #default
        server.port=32780
 
-#. Run the application web server
+#. Run the SimpleELN web server
     
     - For Windows:
       
@@ -109,9 +116,6 @@ Installing and Running the SimpleELN Web Server
       .. code-block:: sh
          :linenos:
          
-         # Optional: modify the file permissions if necessary
-         sudo chown -R $USER ..
-         chmod a+x ./startserver.sh
          # run the script
          ./startserver.sh
          
@@ -128,32 +132,41 @@ The SimpleELN **Team Edition** docker package is optimized for production, with 
 Here's a step-by-step guide to installing Docker, Docker Compose and running the web server of SimpleELN **Team Edition**:
 
 1. Install Docker
-
-
-    Visit the `Docker website <https://docs.docker.com/get-docker>`_ to download and install the appropriate version of Docker for your operating system.
-#. Install Docker Compose
-
-    Visit the `Docker Compose website <https://docs.docker.com/compose/install>`_  and follow the instructions to install Docker Compose.
-#. Download and extract the SimpleELN **Team Edition** docker package zip file
-
-    - Download the SimpleELN **Team Edition** docker package zip file (SimpleELN-Team-Server-Docker-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source.
-    - Rename the downloaded zip file to **simpleeln-team-docker.zip** for convenient identification.
-    - Open a terminal window
-      
-      - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
-      - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
-    - Navigate to the directory where the **simpleeln-team-docker.zip** file is extracted.
     
-      .. code-block:: sh
-         :linenos:
-         
-         # Navigate to the directory where the simpleeln-team-docker.zip file is located and extract the zip file.
-         cd /path/to/simpleeln-team-docker.zip package directory
-         unzip simpleeln-team-docker.zip
-         # Navigate to the directory where the simpleeln-team-docker.zip file has been extracted.
-         cd simpleeln-team-docker
-         
-#. Run SimpleELN web server using Docker
+    Visit the `Docker website <https://docs.docker.com/get-docker>`_ to download and install the appropriate version of Docker for your operating system.
+    
+#. Install Docker Compose
+    
+    Visit the `Docker Compose website <https://docs.docker.com/compose/install>`_  and follow the instructions to install Docker Compose.
+    
+#. Download and extract the SimpleELN **Team Edition** docker package file.
+    
+    - Download the SimpleELN **Team Edition** docker package file (:custom-color-primary-bold:`SimpleELN-Team-Server-Docker-{platform}-{arch}-{version}.zip` or :custom-color-primary-bold:`SimpleELN-Team-Server-Docker-{platform}-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source.
+    - Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-team-docker.zip` or :custom-color-primary-bold:`simpleeln-team-docker.tar.gz` for convenient identification.
+    - Extract the archive file.
+        
+        - For Windows:
+            
+            Extract the :custom-color-primary-bold:`simpleeln-team-docker.zip` file into a designated folder, as outlined in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
+            
+        - For macOS or Linux:
+            
+            - Open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+            - Extract the :custom-color-primary-bold:`simpleeln-team-docker.tar.gz` file as outlined below.
+              
+              .. code-block:: sh
+                 :linenos:
+                 
+                 # Extract the simpleeln-team-docker.tar.gz file
+                 tar -xzvf <path/to/simpleeln-team-docker.tar.gz> -C <path/to/target/folder>
+            
+#. Open a terminal window
+
+    - On Windows, you can press :code:`Win + R` and type ``cmd`` to open a command prompt.
+    - On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (\ |apple clover| + Space).
+
+#. Navigate to the directory where the archive file has been extracted.
+#. Run the SimpleELN web server using Docker
     
     .. code-block:: sh
       :linenos:
