@@ -79,8 +79,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../appendix/change-folder-permission-mac.html">1. Change Folder Permission</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../appendix/server-folder-structure.html">2. Folder Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/zip-unzip-files-windows.html">1. Zip and Unzip Files on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/change-folder-permission-mac.html">2. Change Folder Permission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/server-folder-structure.html">3. Folder Structure</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Acknowledgements</span></p>
 <ul>
@@ -150,8 +151,32 @@
 <section id="installing-and-running-the-simpleeln-web-server">
 <h3><span class="section-number">2.3.1.1.2. </span>Installing and Running the SimpleELN Web Server<a class="headerlink" href="#installing-and-running-the-simpleeln-web-server" title="Link to this heading"></a></h3>
 <ol class="arabic">
-<li><p>Download the application zip file (SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source.</p></li>
-<li><p>Rename the downloaded zip file to <strong>simpleeln-multiteam.zip</strong> for convenient identification.</p></li>
+<li><p>Download the application archive file (<span class="sd-text-primary sd-font-weight-bold">SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.zip</span> or <span class="sd-text-primary sd-font-weight-bold">SimpleELN-MultiTeam-Server-{platform}-{arch}-{version}.tar.gz</span>) for the target platform from the official website or a trusted source.</p></li>
+<li><p>Rename the downloaded archive file to <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam.zip</span> or <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam.tar.gz</span> for convenient identification.</p></li>
+<li><p>Extract the archive file.</p>
+<ul>
+<li><p>For Windows:</p>
+<blockquote>
+<div><p>Extract the <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam.zip</span> file into a designated folder, as outlined in the <a class="reference internal" href="../../appendix/zip-unzip-files-windows.html#zip-unzip-files-on-windows"><span class="std std-ref">Microsoft support documentation</span></a>.</p>
+</div></blockquote>
+</li>
+<li><p>For macOS or Linux:</p>
+<blockquote>
+<div><ul>
+<li><p>Open a terminal from the Applications menu or use the Spotlight search (⌘ + Space).</p></li>
+<li><p>Extract the <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam.tar.gz</span> file as outlined below.</p>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Extract the simpleeln-multiteam.tar.gz file</span>
+<span class="linenos">2</span>tar<span class="w"> </span>-xzvf<span class="w"> </span>&lt;path/to/simpleeln-multiteam.tar.gz&gt;<span class="w"> </span>-C<span class="w"> </span>&lt;path/to/target/folder&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
 <li><p>Open a terminal window</p>
 <blockquote>
 <div><ul class="simple">
@@ -160,18 +185,8 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p>Navigate to the directory where the <strong>simpleeln-multiteam.zip</strong> file is extracted.</p>
-<blockquote>
-<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Navigate to the directory where the simpleeln-multiteam.zip file is located and extract the zip file.</span>
-<span class="linenos">2</span><span class="nb">cd</span><span class="w"> </span>/path/to/simpleeln-multiteam.zip<span class="w"> </span>package<span class="w"> </span>directory
-<span class="linenos">3</span>unzip<span class="w"> </span>simpleeln-multiteam.zip
-<span class="linenos">4</span><span class="c1"># Navigate to the directory where the simpleeln-multiteam.zip file has been extracted.</span>
-<span class="linenos">5</span><span class="nb">cd</span><span class="w"> </span>simpleeln-multiteam
-</pre></div>
-</div>
-</div></blockquote>
-</li>
-<li><p>Modify the database connection settings. (Create the datasource.properties file and place it in the ‘config’ folder)</p>
+<li><p>Navigate to the directory where the archive file has been extracted.</p></li>
+<li><p>Modify the database connection settings. (Create the datasource.properties file and place it in the ‘config’ folder if not exist)</p>
 <blockquote>
 <div><div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-number">Listing 2.5 </span><span class="caption-text">contents of the config/datasource.properties file</span><a class="headerlink" href="#id1" title="Link to this code"></a></div>
@@ -209,11 +224,8 @@
 </div>
 </li>
 <li><p>For macOS or Linux:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Optional: modify the file permissions if necessary</span>
-<span class="linenos">2</span>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="nv">$USER</span><span class="w"> </span>..
-<span class="linenos">3</span>chmod<span class="w"> </span>a+x<span class="w"> </span>./startserver.sh
-<span class="linenos">4</span><span class="c1"># run the script</span>
-<span class="linenos">5</span>./startserver.sh
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># run the script</span>
+<span class="linenos">2</span>./startserver.sh
 </pre></div>
 </div>
 </li>
@@ -239,30 +251,50 @@
 <div><p>Visit the <a class="reference external" href="https://docs.docker.com/compose/install">Docker Compose website</a>  and follow the instructions to install Docker Compose.</p>
 </div></blockquote>
 </li>
-<li><p>Download and extract the SimpleELN <strong>MultiTeam Edition</strong> docker package zip file</p>
+<li><p>Download and extract the SimpleELN <strong>MultiTeam Edition</strong> docker package file</p>
 <blockquote>
 <div><ul>
-<li><p>Download the SimpleELN <strong>MultiTeam Edition</strong> docker package zip file (SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source.</p></li>
-<li><p>Rename the downloaded zip file to <strong>simpleeln-multiteam-docker.zip</strong> for convenient identification.</p></li>
-<li><p>Open a terminal window</p>
-<ul class="simple">
-<li><p>On Windows, you can press <code class="code docutils literal notranslate"><span class="pre">Win</span> <span class="pre">+</span> <span class="pre">R</span></code> and type <code class="docutils literal notranslate"><span class="pre">cmd</span></code> to open a command prompt.</p></li>
-<li><p>On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (⌘ + Space).</p></li>
-</ul>
+<li><p>Download the SimpleELN <strong>MultiTeam Edition</strong> docker package file (<span class="sd-text-primary sd-font-weight-bold">SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.zip</span> or <span class="sd-text-primary sd-font-weight-bold">SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.tar.gz</span>) for the target platform from the official website or a trusted source.</p></li>
+<li><p>Rename the downloaded archive file to <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam-docker.zip</span> or <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam-docker.tar.gz</span> for convenient identification.</p></li>
+<li><p>Extract the archive file.</p>
+<blockquote>
+<div><ul>
+<li><p>For Windows:</p>
+<blockquote>
+<div><p>Extract the <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam-docker.zip</span> file into a designated folder, as outlined in the <a class="reference internal" href="../../appendix/zip-unzip-files-windows.html#zip-unzip-files-on-windows"><span class="std std-ref">Microsoft support documentation</span></a>.</p>
+</div></blockquote>
 </li>
-<li><p>Navigate to the directory where the <strong>simpleeln-multiteam-docker.zip</strong> file is extracted.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Navigate to the directory where the simpleeln-multiteam-docker.zip file is located and extract the zip file.</span>
-<span class="linenos">2</span><span class="nb">cd</span><span class="w"> </span>/path/to/simpleeln-multiteam-docker.zip<span class="w"> </span>package<span class="w"> </span>directory
-<span class="linenos">3</span>unzip<span class="w"> </span>simpleeln-multiteam-docker.zip
-<span class="linenos">4</span><span class="c1"># Navigate to the directory where the simpleeln-multiteam-docker.zip file has been extracted.</span>
-<span class="linenos">5</span><span class="nb">cd</span><span class="w"> </span>simpleeln-multiteam-docker
+<li><p>For macOS or Linux:</p>
+<blockquote>
+<div><ul>
+<li><p>Open a terminal from the Applications menu or use the Spotlight search (⌘ + Space).</p></li>
+<li><p>Extract the <span class="sd-text-primary sd-font-weight-bold">simpleeln-multiteam-docker.tar.gz</span> file as outlined below.</p>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Extract the simpleeln-multiteam-docker.tar.gz file</span>
+<span class="linenos">2</span>tar<span class="w"> </span>-xzvf<span class="w"> </span>&lt;path/to/simpleeln-multiteam-docker.tar.gz&gt;<span class="w"> </span>-C<span class="w"> </span>&lt;path/to/target/folder&gt;
 </pre></div>
 </div>
+</div></blockquote>
 </li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Run SimpleELN web server using Docker</p>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Open a terminal window</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>On Windows, you can press <code class="code docutils literal notranslate"><span class="pre">Win</span> <span class="pre">+</span> <span class="pre">R</span></code> and type <code class="docutils literal notranslate"><span class="pre">cmd</span></code> to open a command prompt.</p></li>
+<li><p>On macOS or Linux, you can open a terminal from the Applications menu or use the Spotlight search (⌘ + Space).</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Navigate to the directory where the archive file has been extracted.</p></li>
+<li><p>Run the SimpleELN web server using Docker</p>
 <blockquote>
 <div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># The -d flag runs the containers in the background.</span>
 <span class="linenos">2</span>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d

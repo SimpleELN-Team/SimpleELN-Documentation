@@ -71,8 +71,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../appendix/change-folder-permission-mac.html">1. Change Folder Permission</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../appendix/server-folder-structure.html">2. Folder Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/zip-unzip-files-windows.html">1. Zip and Unzip Files on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/change-folder-permission-mac.html">2. Change Folder Permission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/server-folder-structure.html">3. Folder Structure</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Acknowledgements</span></p>
 <ul>
@@ -107,8 +108,32 @@
 <span id="install-personal-command-line"></span><h1><span class="section-number">2.1.2. </span>Install SimpleELN <span class="sd-text-primary sd-font-weight-bold">Personal Edition</span> as Web Server<a class="headerlink" href="#install-simpleeln-personal-edition-as-web-server" title="Link to this heading"></a></h1>
 <p>For personal usage, executing the installer application is highly recommended. However, for testing purposes or advanced scenarios, running the SimpleELN <strong>Personal Edition</strong> as a web server is preferred due to its reduced overhead and optimized resource utilization. To install SimpleELN as a web server, kindly adhere to the outlined steps:</p>
 <ol class="arabic">
-<li><p>Download the application zip file (SimpleELN-Personal-Server-{platform}-{arch}-{version}.zip) for the target platform from the official website or a trusted source</p></li>
-<li><p>Rename the downloaded zip file to <strong>simpleeln-personal.zip</strong> for convenient identification.</p></li>
+<li><p>Download the application archive file (<span class="sd-text-primary sd-font-weight-bold">SimpleELN-Personal-Server-{platform}-{arch}-{version}.zip</span> or <span class="sd-text-primary sd-font-weight-bold">SimpleELN-Personal-Server-{platform}-{arch}-{version}.tar.gz</span>) for the target platform from the official website or a trusted source</p></li>
+<li><p>Rename the downloaded archive file to <span class="sd-text-primary sd-font-weight-bold">simpleeln-personal.zip</span> or <span class="sd-text-primary sd-font-weight-bold">simpleeln-personal.tar.gz</span> for convenient identification.</p></li>
+<li><p>Extract the archive file.</p>
+<ul>
+<li><p>For Windows:</p>
+<blockquote>
+<div><p>Extract the <span class="sd-text-primary sd-font-weight-bold">simpleeln-personal.zip</span> file into a designated folder, as outlined in the <a class="reference internal" href="../../appendix/zip-unzip-files-windows.html#zip-unzip-files-on-windows"><span class="std std-ref">Microsoft support documentation</span></a>.</p>
+</div></blockquote>
+</li>
+<li><p>For macOS or Linux:</p>
+<blockquote>
+<div><ul>
+<li><p>Open a terminal from the Applications menu or use the Spotlight search (⌘ + Space).</p></li>
+<li><p>Extract the <span class="sd-text-primary sd-font-weight-bold">simpleeln-personal.tar.gz</span> file as outlined below.</p>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Extract the simpleeln-personal.tar.gz file</span>
+<span class="linenos">2</span>tar<span class="w"> </span>-xzvf<span class="w"> </span>&lt;path/to/simpleeln-personal.tar.gz&gt;<span class="w"> </span>-C<span class="w"> </span>&lt;path/to/target/folder&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
 <li><p>Open a terminal window</p>
 <blockquote>
 <div><ul class="simple">
@@ -117,17 +142,7 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p>Navigate to the directory where the <strong>simpleeln-personal.zip</strong> file is located and extract the zip file.</p>
-<blockquote>
-<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Navigate to the directory where the simpleeln-personal.zip file is located and extract the zip file.</span>
-<span class="linenos">2</span><span class="nb">cd</span><span class="w"> </span>/path/to/simpleeln-personal.zip<span class="w"> </span>package<span class="w"> </span>directory
-<span class="linenos">3</span>unzip<span class="w"> </span>simpleeln-personal.zip
-<span class="linenos">4</span><span class="c1"># Navigate to the directory where the simpleeln-personal.zip file has been extracted.</span>
-<span class="linenos">5</span><span class="nb">cd</span><span class="w"> </span>simpleeln-personal
-</pre></div>
-</div>
-</div></blockquote>
-</li>
+<li><p>Navigate to the directory where the archive file has been extracted.</p></li>
 <li><p>Modify the web server settings. (Create the application.properties file and place it in the ‘config’ folder if not exist)</p>
 <blockquote>
 <div><div class="literal-block-wrapper docutils container" id="id1">
@@ -151,11 +166,8 @@
 </div>
 </li>
 <li><p>For macOS or Linux:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># Optional: modify the file permissions if necessary</span>
-<span class="linenos">2</span>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="nv">$USER</span><span class="w"> </span>..
-<span class="linenos">3</span>chmod<span class="w"> </span>a+x<span class="w"> </span>./startserver.sh
-<span class="linenos">4</span><span class="c1"># run the script</span>
-<span class="linenos">5</span>./startserver.sh
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># run the script</span>
+<span class="linenos">2</span>./startserver.sh
 </pre></div>
 </div>
 </li>
