@@ -6,16 +6,16 @@ Welcome to the **SimpleELN** user guide!
 
 Thank you for giving the **SimpleELN** web server a chance to demonstrate its capabilities and functionality. We appreciate your interest and hope you find it useful for your research and documentation needs.
 
-[SimpelELN Documentation](https://simpleeln-documentation.readthedocs.io/en/latest/index.html).
+[SimpleELN Documentation](https://simpleeln-documentation.readthedocs.io/en/latest/index.html).
 
 ## Description
 
-Source files: [SimpelELN-Team/SimpleELN-Documentation/edit/main/source](https://github.com/SimpelELN-Team/SimpleELN-Documentation/tree/main/source).
+Source files: [SimpleELN-Team/SimpleELN-Documentation/edit/main/source](https://github.com/SimpleELN-Team/SimpleELN-Documentation/tree/main/source).
 
 ## Installation
 
 ~~~bash
-git clone https://github.com/SimpelELN-Team/SimpleELN-Documentation
+git clone https://github.com/SimpleELN-Team/SimpleELN-Documentation
 cd SimpleELN-Documentation
 pip install --user sphinx sphinx_rtd_theme myst-parser sphinx-autobuild sphinx-design
 ~~~
