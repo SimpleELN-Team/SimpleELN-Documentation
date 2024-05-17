@@ -8,7 +8,7 @@
    
 
 #############################################################################################################################################
-Install SimpleELN :custom-color-primary-bold:`Team Edition` as Web Server with Embedded Database
+Install SimpleELN :custom-color-primary-bold:`Team Edition` Web Server with Embedded Database
 #############################################################################################################################################
 
 The SimpleELN **Team Edition** is preconfigured with an embedded database, ideal for testing purposes. For production usage, kindly refer to the instructions outlined in :ref:`Install SimpleELN Team Edition with an External Database <install-team-external-database>` for integrating with external databases such as MySQL, SQL Server, or Oracle. Please adhere to the outlined steps below to test its functionalities:

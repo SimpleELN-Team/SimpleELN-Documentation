@@ -28,7 +28,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
             
             Here is a step-by-step guide to installing SimpleELN **Personal Edition** on Windows using the installer:
             
-            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-win32-x64-{version}.exe` for Windows) from the official website or a trusted source.
+            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-Desktop-win-x64-{version}.exe` for Windows) from the official website or a trusted source.
             2. Double-click the downloaded installer to start the installation process.
             3. Follow the on-screen instructions to complete the installation.
             4. If the installation is successful, you can launch SimpleELN **Personal Edition** from the Start menu or the desktop shortcut.
@@ -42,7 +42,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
             
             Here is a step-by-step guide to installing SimpleELN **Personal Edition** on macOS using the DMG file:
             
-            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-darwin-{arch}-{version}.dmg` for Mac) from the official website or a trusted source.
+            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-Desktop-mac-{arch}-{version}.dmg` for Mac) from the official website or a trusted source.
             2. Open the DMG file using the default macOS application or any other disk image viewer.
             3. A virtual disk will appear on your desktop. Double-click it to mount the disk.
             4. Inside the mounted disk, you will find the SimpleELN application. Drag it to the **Applications** folder.
@@ -58,7 +58,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
        
             Here is a step-by-step guide to installing SimpleELN **Personal Edition** on Linux using the DEB or RPM file:
             
-            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-linux-{arch}-{version}.deb` or :custom-color-primary-bold:`SimpleELN-Personal-linux-{arch}-{version}.rpm` for Linux) from the official website or a trusted source
+            1. Download the installer application file (:custom-color-primary-bold:`SimpleELN-Personal-Desktop-linux-{arch}-{version}.deb` or :custom-color-primary-bold:`SimpleELN-Personal-Desktop-linux-{arch}-{version}.rpm` for Linux) from the official website or a trusted source
             #. Install the downloaded package.
                 
                 a. Installation Guide for Debian and Debian-derived Linux distributions
@@ -66,16 +66,24 @@ To install the SimpleELN **Personal Edition**, you have the following options:
                   .. code-block:: sh
                     :linenos:
                     
-                    # Navigate to the directory where the SimpleELN-Personal-linux-{arch}-{version}.deb file is located
-                    sudo dpkg -i SimpleELN-Personal-linux-{arch}-{version}.deb
+                    # Navigate to the directory where the SimpleELN-Personal-Desktop-linux-{arch}-{version}.deb file is located
+                    # sudo dpkg -i [path_to_deb_file]
+                    # or sudo apt-get install [path_to_deb_file]
+                    # or sudo apt install [path_to_deb_file]
+                    
+                    sudo dpkg -i SimpleELN-Personal-Desktop-linux-{arch}-{version}.deb
                 
                 b. Installation Guide for Red Hat and Red Hat-derived Linux Distributions
                 
                   .. code-block:: sh
                     :linenos:
                     
-                    # Navigate to the directory where the SimpleELN-Personal-linux-{arch}-{version}.rpm file is located
-                    sudo rpm -ivh SimpleELN-Personal-linux-{arch}-{version}.rpm
+                    # Navigate to the directory where the SimpleELN-Personal-Desktop-linux-{arch}-{version}.rpm file is located
+                    # sudo rpm -ivh [path_to_rpm_file]
+                    # or sudo yum localinstall [path_to_rpm_file]
+                    # or sudo dnf localinstall [path_to_rpm_file]
+                    
+                    sudo rpm -ivh SimpleELN-Personal-Desktop-linux-{arch}-{version}.rpm
                 
                 
             #. If the installation is successful, you can launch SimpleELN **Personal Edition** from the Launchpad or run the command ``/opt/SimpleELN/simpleeln.app`` from a terminal.

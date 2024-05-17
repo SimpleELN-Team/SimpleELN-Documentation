@@ -10,13 +10,13 @@
    
 
 #############################################################################################################################################
-Install SimpleELN :custom-color-primary-bold:`MultiTeam Edition` as Web Server with External Database
+Install SimpleELN :custom-color-primary-bold:`MultiTeam Edition` Web Server with External Database
 #############################################################################################################################################
 
 The **MultiTeam Edition** is perfectly suited for organizations with multiple teams, each having multiple team members, enabling seamless data sharing across teams. It functions as an HTTP server by default, enabling concurrent access for numerous users. For production usage, it is highly recommended to configure an external database such as MySQL, SQL Server, or Oracle. These databases offer robust performance, scalability, and security features that are crucial for handling mission-critical data and ensuring the stability of your application. For testing purposes, kindly refer to the instructions outlined in :ref:`Install SimpleELN MultiTeam Edition with an Embedded Database <install-multiteam-embedded-database>` to effortlessly evaluate the SimpleELN MultiTeam Edition with an embedded database, requiring no additional configurations.
 
 ====================================================================================================================
-Installing External Database and Web Server Application Manually by Executing Commands
+Installing External Database and Running Web Server Manually
 ====================================================================================================================
 
 MySQL server is highly recommended as the preferred database server for production environments. Kindly refer to the official instructions provided by the database suppliers for configuring and utilizing other databases of interest. Here's a step-by-step guide to installing MySQL and creating the simpleelndb database:
@@ -44,9 +44,10 @@ Installing MySQL Server and Create the Application Database
        :linenos:
        
        #Create a new user by assigning a unique username and password. For example, the username is "new-user" and the password is "new-pass".
-       CREATE USER 'new-user'@'localhost' IDENTIFIED BY 'new-pass'; #Replace 'new-user' with the desired username and 'new-pass' with the desired password for the new user
-       #Grant access to the simpleelndb database
-       GRANT ALL PRIVILEGES ON simpleelndb.* TO 'new-user'@'localhost';  #Replace 'new-user' with the desired username 
+       #Replace 'new-user' with the desired username and 'new-pass' with the desired password for the new user
+       CREATE USER 'new-user'@'localhost' IDENTIFIED BY 'new-pass'; 
+       #Grant access to the simpleelndb database, replace 'new-user' with the desired username 
+       GRANT ALL PRIVILEGES ON simpleelndb.* TO 'new-user'@'localhost';
        FLUSH PRIVILEGES;  # Refresh the permissions
 
 --------------------------------------------------------------------------------------------------------------------
@@ -84,10 +85,13 @@ Installing and Running the SimpleELN Web Server
        :caption: contents of the config/datasource.properties file 
        :linenos:
        
-       # contents of the config/datasource.properties file
-       spring.datasource.url=jdbc:mysql://localhost:3306/simpleelndb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8 # the connection url to access the simpleelndb database
-       spring.datasource.username='new-user' # the 'username' to access the simpleelndb database
-       spring.datasource.password='new-pass' # the 'password' to access the simpleelndb database
+       # contents of the config/datasource.properties file 
+       # spring.datasource.url: the connection url to access the simpleelndb database
+       spring.datasource.url=jdbc:mysql://localhost:3306/simpleelndb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8 
+       # spring.datasource.username: the 'username' to access the simpleelndb database
+       spring.datasource.username='new-user'
+       # spring.datasource.password: the 'password' to access the simpleelndb database
+       spring.datasource.password='new-pass'
        spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
        spring.datasource.sql-script-encoding=UTF-8
        spring.datasource.schema=classpath:elnschema.mysql.sql
@@ -124,9 +128,9 @@ Installing and Running the SimpleELN Web Server
 #. Accessing the web server. Please refer to the reference :ref:`Accessing the web server through a web browser <install-multiteam-external-database-screenshots>` for detailed step-by-step instructions on how to access the web server through a web browser.
 
 
-====================================================================================================================
-Installing External Database and Web Server Application Automatically Using Docker
-====================================================================================================================
+==============================================================================================================================================================================
+Installing External Database and Running Web Server Automatically via Docker
+==============================================================================================================================================================================
 
 The SimpleELN **MultiTeam Edition** docker package is optimized for production, with an external MySQL database preconfigured. To facilitate the installation of the MySQL database and the simpleeln server for production use, instructions for Docker installation are provided. With Docker, the MySQL database and the simpleeln server can be configured and managed automatically. For testing purposes, kindly refer to the instructions outlined in :ref:`Install SimpleELN MultiTeam Edition with an Embedded Database <install-multiteam-embedded-database>` to effortlessly evaluate the SimpleELN MultiTeam Edition with an embedded database, requiring no additional configurations.
 
@@ -142,13 +146,13 @@ Here's a step-by-step guide to installing Docker, Docker Compose and running the
 
 #. Download and extract the SimpleELN **MultiTeam Edition** docker package file
 
-    - Download the SimpleELN **MultiTeam Edition** docker package file (:custom-color-primary-bold:`SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.zip` or :custom-color-primary-bold:`SimpleELN-MultiTeam-Server-Docker-{platform}-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source.
-    - Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-multiteam-docker.zip` or :custom-color-primary-bold:`simpleeln-multiteam-docker.tar.gz` for convenient identification.
+    - Download the SimpleELN **MultiTeam Edition** docker package file (:custom-color-primary-bold:`SimpleELN-MultiTeam-Docker-Server-{arch}-{version}.tar.gz`) for the target platform from the official website or a trusted source.
+    - Rename the downloaded archive file to :custom-color-primary-bold:`simpleeln-multiteam-docker.tar.gz` for convenient identification.
     - Extract the archive file.
        
        - For Windows:
           
-          Extract the :custom-color-primary-bold:`simpleeln-multiteam-docker.zip` file into a designated folder, as outlined in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
+          Utilize an external program to decompress the :custom-color-primary-bold:`simpleeln-multiteam-docker.tar.gz` archive into a designated folder.
           
        - For macOS or Linux:
           

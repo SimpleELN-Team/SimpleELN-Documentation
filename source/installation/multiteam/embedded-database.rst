@@ -10,7 +10,7 @@
    
 
 #############################################################################################################################################
-Install SimpleELN :custom-color-primary-bold:`MultiTeam Edition` as Web Server with Embedded Database
+Install SimpleELN :custom-color-primary-bold:`MultiTeam Edition` Web Server with Embedded Database
 #############################################################################################################################################
 
 The SimpleELN **MultiTeam Edition** is preconfigured with an embedded database, ideal for testing purposes. For production usage, kindly refer to the instructions outlined in :ref:`Install SimpleELN MultiTeam Edition with an External Database <install-multiteam-external-database>` for integrating with external databases such as MySQL, SQL Server, or Oracle. Please adhere to the outlined steps below to test its functionalities:
