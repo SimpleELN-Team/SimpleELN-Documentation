@@ -101,7 +101,7 @@ To install the SimpleELN **Personal Edition**, you have the following options:
             
             Here is a step-by-step guide to running the portable version of the SimpleELN **Personal Edition** on Windows:
             
-            1. Download the portable application file (:custom-color-primary-bold:`SimpleELN-Personal-Portable-win32-x64-{version}.zip` for Windows) from the official website or a trusted source.
+            1. Download the portable application file (:custom-color-primary-bold:`SimpleELN-Personal-Portable-win-x64-{version}.zip` for Windows) from the official website or a trusted source.
             2. Extract the downloaded zip file into a designated folder, as instructed in the :ref:`Microsoft support documentation <zip-unzip-files-on-windows>`.
             3. Click the executable file (:custom-color-primary:`SimpleELN.exe`) to run the portable version.
             4. Once launched, the SimpleELN interface similar to the following :ref:`screenshot <personal-edition-desktop-homepage-screenshots>` will be shown. 
