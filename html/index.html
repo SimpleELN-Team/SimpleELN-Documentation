@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="An electronic lab notebook (ELN software) designed to facilitate the secure and efficient organization, storage, search, and sharing of scientific data and research notes" name="description" />
+<meta content="laboratory, mobile, digital, notebook, lims, desktop, electronic, user-friendly, mobile-friendly, laboratory-reports, eln, electronic-lab-notebook, laboratory-management-system, laboratory-information-system, laboratory-information-management-system, simpleeln" name="keywords" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide &mdash; SimpleELN 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom-theme.css?v=78e1ab1a" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=8d563738"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+    
+    
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            SimpleELN
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">2. Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialization.html">3. SimpleELN Initialization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project-management.html">1. Notebook Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-management.html">2. User Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix/zip-unzip-files-windows.html">1. Zip and Unzip Files on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix/change-folder-permission-mac.html">2. Change Folder Permission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix/server-folder-structure.html">3. Folder Structure</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Acknowledgements</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="thanks.html">Acknowledgements</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">SimpleELN</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">User Guide</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="title-center h1" id="user-guide">
+<span id="index"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading"></a></h1>
+<figure class="align-center" id="fig-logo">
+<a class="sd-mb-2 reference internal image-reference" href="_images/simpleelnlogo.png"><img alt="SimpleELN logo" class="sd-mb-2" src="_images/simpleelnlogo.png" style="width: 100px;" /></a>
+</figure>
+<p class="sd-text-center sd-fs-6 sd-font-weight-bold">an intuitive electronic laboratory notebook tailored for the archiving of research data</p>
+<p class="sd-text-center sd-fs-5 sd-text-primary sd-font-weight-bold"><a class="reference external" href="http://simpleeln.com">Official website</a> | <a class="reference external" href="http://simpleeln.com/login">Live demo</a> | <a class="reference external" href="https://simpleeln-team.github.io">Documentation</a></p>
+<p>Welcome to the <strong>SimpleELN</strong> documentation! Here, you will find comprehensive information on how to utilize <strong>SimpleELN</strong> for creating, sharing, and organizing your daily works, documents, and files. You can try out all the functionalities online at <a class="reference external" href="http://simpleeln.com">http://simpleeln.com</a>.</p>
+</section>
+<section id="edition">
+<h1>Edition<a class="headerlink" href="#edition" title="Link to this heading"></a></h1>
+<blockquote>
+<div><ul>
+<li><p><a class="reference external" href="https://github.com/SimpleELN-Team/SimpleELN-Personal">Personal Edition</a></p>
+<blockquote>
+<div><p>The <strong>Personal Edition</strong> is tailored for individual users, empowering them to create and manage their own experimental records. This edition is ideal for personal use as it ensures enhanced data security and provides a user-friendly experience during installation and daily use.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://github.com/SimpleELN-Team/SimpleELN-Team">Team Edition</a></p>
+<blockquote>
+<div><p>The <strong>Team Edition</strong> is suitable for team-based groups, where one team account with a team admin role and multiple team user accounts can be created. This edition is ideal for multi-user single laboratories or organizations that require collaboration between team users.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam">MultiTeam Edition</a></p>
+<blockquote>
+<div><p>The <strong>MultiTeam Edition</strong> is tailored for departments, centers, companies, organizations, and other entities that encompass multiple independent team groups. This edition is particularly beneficial for multi-team laboratories or organizations that require collaboration between teams or users.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="releases">
+<h1>Releases<a class="headerlink" href="#releases" title="Link to this heading"></a></h1>
+<details class="sd-ml-4">
+    <summary class="sd-font-weight-bold">Personal Edition <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases">Latest Release</a> </summary>
+
+    <ul class="sd-mt-2 sd-pl-4">
+        <li>Windows
+            <ul>
+                  <li> Desktop Version
+                       <ul>
+                           <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Desktop-win-x64-Setup-1.0.0.exe">SimpleELN-Personal-Desktop-win-x64-Setup-1.0.0.exe</a> </li>
+                           <li>arm64 : N/A</li>
+                        </ul>
+                  </li>
+                  <li>Portable Version
+                        <ul>
+                            <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Portable-win-x64-1.0.0.zip">SimpleELN-Personal-Portable-win-x64-1.0.0.zip</a></li>
+                            <li>arm64 : N/A</li>
+                        </ul>
+                  </li>
+              </ul>
+        </li>
+        <li>macOS
+            <ul>
+                  <li> Desktop Version
+                       <ul>
+                           <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Desktop-mac-x64-1.0.0.dmg">SimpleELN-Personal-Desktop-mac-x64-1.0.0.dmg</a> </li>
+                           <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Desktop-mac-arm64-1.0.0.dmg">SimpleELN-Personal-Desktop-mac-arm64-1.0.0.dmg</a> </li>
+                        </ul>
+                  </li>
+                  <li>Portable Version
+                        <ul>
+                            <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Portable-mac-x64-1.0.0.zip">SimpleELN-Personal-Portable-mac-x64-1.0.0.zip</a></li>
+                            <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Portable-mac-arm64-1.0.0.zip">SimpleELN-Personal-Portable-mac-arm64-1.0.0.zip</a></li>
+                        </ul>
+                  </li>
+              </ul>
+        </li>
+        <li>Linux
+            <ul>
+                  <li> Desktop Version
+                       <ul>
+                           <li>x86_64:
+                               <ul>
+                                   <li>
+                                        <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Desktop-linux-x64-1.0.0.deb">SimpleELN-Personal-Desktop-linux-x64-1.0.0.deb</a>
+                                   </li>
+                                   <li>
+                                        <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Desktop-linux-x64-1.0.0.rpm">SimpleELN-Personal-Desktop-linux-x64-1.0.0.rpm</a>
+                                   </li>
+                               </ul>
+                            </li>
+                           <li>arm64 :
+                               <ul>
+                                   <li>
+                                        <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Desktop-linux-arm64-1.0.0.deb">SimpleELN-Personal-Desktop-linux-arm64-1.0.0.deb</a>
+                                   </li>
+                                   <li>
+                                        <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Desktop-linux-arm64-1.0.0.rpm">SimpleELN-Personal-Desktop-linux-arm64-1.0.0.rpm</a>
+                                   </li>
+                               </ul>
+                            </li>
+                        </ul>
+                  </li>
+                  <li>Portable Version
+                        <ul>
+                            <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Portable-linux-x64-1.0.0.tar.gz">SimpleELN-Personal-Portable-linux-x64-1.0.0.tar.gz</a></li>
+                            <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-Personal/releases/download/v1.0.0/SimpleELN-Personal-Portable-linux-arm64-1.0.0.tar.gz">SimpleELN-Personal-Portable-linux-arm64-1.0.0.tar.gz</a></li>
+                        </ul>
+                  </li>
+              </ul>
+        </li>
+
+    </ul>
+</details>
+<details class="sd-my-2 sd-ml-4">
+    <summary class="sd-font-weight-bold">Team Edition <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases">Latest Release</a> </summary>
+
+    <ul class="sd-mt-2 sd-pl-4">
+        <li>Server
+            <ul>
+                  <li> Windows
+                       <ul>
+                           <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases/download/v1.0.0/SimpleELN-Team-Server-win-x64-1.0.0.zip">SimpleELN-Team-Server-win-x64-1.0.0.zip</a> </li>
+                           <li>arm64 : N/A</li>
+                        </ul>
+                  </li>
+                  <li>macOS
+                        <ul>
+                            <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases/download/v1.0.0/SimpleELN-Team-Server-mac-x64-1.0.0.tar.gz">SimpleELN-Team-Server-mac-x64-1.0.0.tar.gz</a></li>
+                            <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases/download/v1.0.0/SimpleELN-Team-Server-mac-arm64-1.0.0.tar.gz">SimpleELN-Team-Server-mac-arm64-1.0.0.tar.gz</a></li>
+                        </ul>
+                  </li>
+                  <li>Linux
+                        <ul>
+                          <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases/download/v1.0.0/SimpleELN-Team-Server-linux-x64-1.0.0.tar.gz">SimpleELN-Team-Server-linux-x64-1.0.0.tar.gz</a></li>
+                          <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases/download/v1.0.0/SimpleELN-Team-Server-linux-arm64-1.0.0.tar.gz">SimpleELN-Team-Server-linux-arm64-1.0.0.tar.gz</a></li>
+                        </ul>
+                  </li>
+              </ul>
+        </li>
+        <li>Docker
+            <ul>
+                  <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases/download/v1.0.0/SimpleELN-Team-Docker-Server-x64-1.0.0.tar.gz">SimpleELN-Team-Docker-Server-x64-1.0.0.tar.gz</a> </li>
+                  <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-Team/releases/download/v1.0.0/SimpleELN-Team-Docker-Server-arm64-1.0.0.tar.gz">SimpleELN-Team-Docker-Server-arm64-1.0.0.tar.gz</a> </li>
+            </ul>
+        </li>
+    </ul>
+</details>
+<details class="sd-mt-2 sd-ml-4">
+    <summary class="sd-font-weight-bold">MultiTeam Edition <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases">Latest Release</a> </summary>
+
+    <ul class="sd-mt-2 sd-pl-4">
+        <li>Server
+            <ul>
+                  <li> Windows
+                       <ul>
+                           <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases/download/v1.0.0/SimpleELN-MultiTeam-Server-win-x64-1.0.0.zip">SimpleELN-MultiTeam-Server-win-x64-1.0.0.zip</a> </li>
+                           <li>arm64 : N/A</li>
+                        </ul>
+                  </li>
+                  <li>macOS
+                        <ul>
+                            <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases/download/v1.0.0/SimpleELN-MultiTeam-Server-mac-x64-1.0.0.tar.gz">SimpleELN-MultiTeam-Server-mac-x64-1.0.0.tar.gz</a></li>
+                            <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases/download/v1.0.0/SimpleELN-MultiTeam-Server-mac-arm64-1.0.0.tar.gz">SimpleELN-MultiTeam-Server-mac-arm64-1.0.0.tar.gz</a></li>
+                        </ul>
+                  </li>
+                  <li>Linux
+                        <ul>
+                          <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases/download/v1.0.0/SimpleELN-MultiTeam-Server-linux-x64-1.0.0.tar.gz">SimpleELN-MultiTeam-Server-linux-x64-1.0.0.tar.gz</a></li>
+                          <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases/download/v1.0.0/SimpleELN-MultiTeam-Server-linux-arm64-1.0.0.tar.gz">SimpleELN-MultiTeam-Server-linux-arm64-1.0.0.tar.gz</a></li>
+                        </ul>
+                  </li>
+              </ul>
+        </li>
+        <li>Docker
+            <ul>
+                  <li>x86_64: <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases/download/v1.0.0/SimpleELN-MultiTeam-Docker-Server-x64-1.0.0.tar.gz">SimpleELN-MultiTeam-Docker-Server-x64-1.0.0.tar.gz</a> </li>
+                  <li>arm64 : <a href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam/releases/download/v1.0.0/SimpleELN-MultiTeam-Docker-Server-arm64-1.0.0.tar.gz">SimpleELN-MultiTeam-Docker-Server-arm64-1.0.0.tar.gz</a> </li>
+            </ul>
+        </li>
+    </ul>
+</details>
+
+<div class="sd-mb-4"/></section>
+<section id="installation-guide">
+<h1>Installation guide<a class="headerlink" href="#installation-guide" title="Link to this heading"></a></h1>
+<blockquote>
+<div><p>For individual use, kindly consider the <a class="reference external" href="https://github.com/SimpleELN-Team/SimpleELN-Personal">Personal Edition</a>. For larger groups with numerous members, we recommend the <a class="reference external" href="https://github.com/SimpleELN-Team/SimpleELN-Team">Team Edition</a> or <a class="reference external" href="https://github.com/SimpleELN-Team/SimpleELN-MultiTeam">MultiTeam Edition</a>, as it not only encompasses all the functionalities of the <a class="reference external" href="https://github.com/SimpleELN-Team/SimpleELN-Personal">Personal Edition</a>, but also streamlines collaboration among group members. For detailed installation and usage guidelines, please refer to the <a class="reference external" href="https://simpleeln-team.github.io">official documentation</a>.</p>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-right" title="1. Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2024, SimpleELN Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
