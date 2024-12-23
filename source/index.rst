@@ -237,6 +237,7 @@ Installation guide
    :hidden:
    
    thanks
-   
+   selection-guide-en
+
 
 
